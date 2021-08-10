@@ -26,7 +26,7 @@
 			
 			// append clues markup after puzzle wrapper div
 			// This should be moved into a configuration object
-			this.append('<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><h2 class="title">Horizantal</h2><ul class="across"></ul><h2 class="title">Vertical</h2><ul class="down"></ul></aside>');
+			this.append('<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><div><h2 class="title">Horizantal</h2><ul class="across"></ul></div><div><h2 class="title">Vertical</h2><ul class="down"></ul></div></aside>');
 			
 			// initialize some variables
 			var tbl = [
@@ -52,6 +52,7 @@
 				mode = 'interacting',
 				solvedToggle = false,
 				z = 0;
+
 
 			var puzInit = {
 				
@@ -195,7 +196,9 @@
 
 						// while we're in here, add clues to DOM!
 						$('aside.puzzle-clues .' + puzz.data[i].orientation).append('<li class="clue" tabindex="1" data-position="' + i + '"><span class="number">' + puzz.data[i].position + '. </span>' + puzz.data[i].clue + '</li>'); 
+						
 					}				
+					
 					
 					// Calculate rows/cols by finding max coords of each entry, then picking the highest
 					for (var i = 0, p = entryCount; i < p; ++i) {
@@ -226,6 +229,9 @@
 					tbl.push("</table>");
 					tbl.push("</main>")
 					puzzEl.append(tbl.join(''));
+					// this.append('<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><div><h2 class="title">Horizantal</h2><ul class="across"></ul></div><div><h2 class="title">Vertical</h2><ul class="down"></ul></div></aside>');
+
+					
 				},
 				
 				/*
@@ -259,6 +265,7 @@
 								$(light)
 									.addClass('entry-' + (hasOffset ? x - positionOffset : x) + ' position-' + (x-1) )
 									.append('<input maxlength="1" val="" type="text" tabindex="-1" />');
+									
 							}
 						};
 						
