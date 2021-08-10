@@ -2,7 +2,7 @@ let data = [
   {
      "clue": "ما هي سرعة الأبلود الخاصة في خدمة الفايلاين سوهو ؟",
      "answer": "سبعةميجا",
-     "position": 1,
+     "position": 3,
      "orientation": "down",
      "startx": 6,
      "starty": 1
@@ -10,7 +10,7 @@ let data = [
 {
   "clue": "ماذا يجب ان ازود موظف المعرض لكي يتم دفع الفواتير ؟",
   "answer": "رقمالهوية",
-  "position": 2,
+  "position": 3,
   "orientation": "down",
   "startx": 16,
   "starty": 2
@@ -107,7 +107,7 @@ let data = [
 
 window.onload = () => {
   
-      $(".puzzle-container").crossword(data, () => alert("End!"));
+      $(".puzzle-container").crossword(data, () => alert("bravooo!"));
     
 
   // Sets the theme
@@ -115,3 +115,6 @@ window.onload = () => {
     $("html").addClass("dark");
   }
 };
+
+
+//00a0d7

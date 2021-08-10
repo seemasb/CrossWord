@@ -1,3 +1,9 @@
+@font-face {
+	font-family: myNeoFont;
+	src: url(NeoSansArabicRegular.ttf);
+  }
+
+
 html {
 	/*
 		  Deafult colors
@@ -17,6 +23,8 @@ html {
 	font: 62.5%/1.3em Helvetica, sans-serif;
 	width: 100%;
 	height: 100%;
+	font-family: myNeoFont ;
+	margin-top: -10px;
   }
   
   html.dark {
@@ -49,6 +57,7 @@ html {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
+	/* width: 100%; */
 	/*
 		  Clues style
 	  */
@@ -68,10 +77,10 @@ html {
   .puzzle-container .puzzle-wrapper table.puzzle td {
 	width: 5em;
 	height: 5em;
-	border: 1px solid rgb(60, 164, 196);;
+	border: 1px solid #00a0d7;
 	padding: 0;
 	margin: 0;
-	background-color:rgb(60, 164, 196);
+	background-color:#00a0d7;
 	position: relative;
   }
   
@@ -83,7 +92,7 @@ html {
 	text-align: center;
 	font-size: 3em;
 	color: var(--text-color);
-	background-color: var(--white-color);
+	background-color: rgb(230, 227, 227);
   }
   
   .puzzle-container .puzzle-wrapper table.puzzle td input:focus,
@@ -100,7 +109,8 @@ html {
   
   .puzzle-container .puzzle-wrapper table.puzzle td input.done {
 	font-weight: bold;
-	color: var(--accent-color);
+	color: #00a0d7;
+	background-color: yellow;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -128,7 +138,7 @@ html {
   
   .puzzle-container .active,
   .puzzle-container .clues-active {
-	background-color: var(--white-color);
+	background-color: rgba(201, 201, 201, 0.466);
   }
   
   .puzzle-container aside.puzzle-clues {
@@ -137,28 +147,33 @@ html {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin-bottom: 40px;
+	/* gap: 0%; */
   }
   
   .puzzle-container aside.puzzle-clues .title {
-	color: var(--accent-color);
+	color: #00a0d7;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	font-size: 2.2em;
+	margin-left: 40px;
   }
   
   .puzzle-container aside.puzzle-clues .clue {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	margin: 0.3em;
 	line-height: 1.6em;
 	list-style: none;
 	padding: 5px;
 	color: var(--text-color);
 	border-radius: 5px;
+	
   }
   
   .puzzle-container aside.puzzle-clues .clue .number {
-	color: var(--accent-color);
+	color: #00a0d7;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -175,3 +190,27 @@ html {
 	user-select: none;
   }
   
+
+  /* ///////////////////////////////////////////////////////////// */
+  .header{
+	  width: 100%;
+	  height: 60px;
+	  background-color: #00a0d7;
+	  color: white;
+	  font-size: 2.8em;
+	  text-align: center;
+	  /* font-weight: lighter; */
+	  /* padding-top: 30px; */
+	  margin-bottom: 35px;
+	  
+  }
+
+  .header span{
+	position: relative;
+	top: 25px;
+	
+}
+
+.header img{
+	float: left;
+}
