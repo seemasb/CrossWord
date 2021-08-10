@@ -214,3 +214,13 @@ html {
 .header img{
 	float: left;
 }
+
+/* //////////////////////////////////////////// */
+
+@media only screen and (max-width: 600px) {
+	.puzzle-container .puzzle-wrapper table.puzzle td {
+		width: 3em;
+		height:3em;
+		
+	  }
+  }
