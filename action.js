@@ -107,7 +107,7 @@ let data = [
 
 window.onload = () => {
   
-      $(".puzzle-container").crossword(data, () => alert("bravooo!"));
+      $(".puzzle-container").crossword(data, () => load_page());
     
 
   // Sets the theme
@@ -116,5 +116,10 @@ window.onload = () => {
   }
 };
 
+
+function load_page(){
+ // Simulate an HTTP redirect:
+window.location.replace("win.html");
+  };
 
 //00a0d7
