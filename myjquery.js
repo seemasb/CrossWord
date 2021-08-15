@@ -28,6 +28,8 @@
 			// This should be moved into a configuration object
 			this.append('<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><div><h1 class="title">Horizantal</h1><ul class="across"></ul></div><div><h1 class="title">Vertical</h1><ul class="down"></ul></div></aside>');
 			
+
+			// var myVar = '<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><div><h1 class="title">Horizantal</h1><ul class="across"></ul></div><div><h1 class="title">Vertical</h1><ul class="down"></ul></div></aside>'
 			// initialize some variables
 			var tbl = [
 					'<main class="puzzle-wrapper">',
@@ -172,6 +174,10 @@
 					// DELETE FOR BG
 					puzInit.buildTable();
 					puzInit.buildEntries();
+
+					// Puzzle clues added to DOM in calcCoords(), so now immediately put mouse focus on first clue
+					// clueLiEls = $('aside.puzzle-clues li');
+					// $('aside.puzzle-clues .' + currOri + ' li' ).eq(0).addClass('clues-active').focus();
 										
 				},
 				
@@ -587,6 +593,8 @@
 			}; // end util object
 
 				
-			puzInit.init();			
+			puzInit.init();		
+			this.append(myVar);
+	
 	}
 })(jQuery);

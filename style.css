@@ -51,6 +51,8 @@ html {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-direction: column;
+	flex-direction: column-reverse;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-pack: space-evenly;
@@ -59,7 +61,9 @@ html {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
-	flex-direction: row;
+	align-content: center;
+	margin-top: 47px;
+	/* flex-direction: row; */
 	/* margin-bottom: 300px; */
 	/* width: 100%; */
 	/*
@@ -153,6 +157,8 @@ html {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin-bottom: 40px;
+	margin-top: 43px;
+	align-self: center;
 	/* gap: 0%; */
   }
   
