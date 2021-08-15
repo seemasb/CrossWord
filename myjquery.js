@@ -313,6 +313,7 @@
 					if(valToCheck === currVal){	
 						$('.active')
 							.addClass('done')
+							.prop('readonly', true)
 							.removeClass('active');
 					
 						$('.clues-active').addClass('clue-done');
