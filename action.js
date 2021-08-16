@@ -105,9 +105,12 @@ let data = [
 }
 ] 
 
+
+
 window.onload = () => {
   
-      $(".puzzle-container").crossword(data, () => load_page());
+      // $(".puzzle-container").crossword(data, () => load_page());
+      $(".puzzle-container").crossword(data, () => $('#exampleModalCenter').modal('show'));
     
 
   // Sets the theme
@@ -118,8 +121,6 @@ window.onload = () => {
 
 
 function load_page(){
- // Simulate an HTTP redirect:
 window.location.replace("win.html");
   };
 
-//00a0d7
