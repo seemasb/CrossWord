@@ -283,6 +283,7 @@
 						let length = $('.entry-' + i +':eq(0) span').length;
 						if(length == 0){
 							$groupedLights.eq(0)
+								// .append('<span class="' + puzz.data[i].orientation + '"></span>');
 								.append('<span class="' + puzz.data[i].orientation + '">' + puzz.data[i].position + '</span>');
 						}
 					}	
